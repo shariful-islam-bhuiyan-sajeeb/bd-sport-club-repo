@@ -9,8 +9,6 @@ const SportCard = ({sports}) => {
 
     }
 
-
-
     const { picture, name,age,time,about}=sports
 
     return (

@@ -3,8 +3,6 @@ import {faPassport} from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import SportCard from '../SportCard/SportCard';
 import UpdateCard from '../UpdateCard/UpdateCard';
-
-
 const Headers = () => {
 
  const [sports,setSport] =useState([]);

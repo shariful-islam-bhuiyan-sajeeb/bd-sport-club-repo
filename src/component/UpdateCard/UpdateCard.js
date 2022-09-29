@@ -1,4 +1,4 @@
-import { faLocationArrow, faMap, faMapLocation } from '@fortawesome/free-solid-svg-icons';
+import { faLocationArrow, faLocationPin, faMap, faMapLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
@@ -11,7 +11,7 @@ const UpdateCard = () => {
                 <div className=''>
                     <h2 className='font-bold text-xl text-black'>Shariful Islam Sajeeb</h2>
                     <div className='flex items-center gap-2 text-black'>
-                        <FontAwesomeIcon icon={faMap}></FontAwesomeIcon>
+                        <h1 className='text-black'><FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon></h1>
                         <p>Dhaka,Bangladesh</p>
                     </div>
                     
