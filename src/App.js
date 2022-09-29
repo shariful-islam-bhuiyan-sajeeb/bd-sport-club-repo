@@ -4,7 +4,7 @@ import Headers from './component/Headers/Headers';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
     <Headers></Headers>
     
     </div>

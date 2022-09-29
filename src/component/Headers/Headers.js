@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPassport} from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import SportCard from '../SportCard/SportCard';
+import UpdateCard from '../UpdateCard/UpdateCard';
 
 
 const Headers = () => {
@@ -23,23 +24,18 @@ const Headers = () => {
                     </div>
                         <h1 className='text-4xl text-black pr-0 font-semibold mt-10'>
                             Select you Favourite Game.</h1>
-                    <div className='grid grid-cols-3 gap-5'>
+                    <div className='grid grid-cols-3 w-3/4  gap-5'>
                         {
                             sports.map(sports => <SportCard sports={sports}></SportCard>)
                         }
-                     </div>       
-                    
-               </div>
-               
-              
-                
-               
+                     </div>        
+              </div>
            </div>
            
-           <div>
-                <h1> Left side</h1>
+            <div className='bg-orange-300 w-96 h-screen' >
+                <UpdateCard></UpdateCard>
            </div>
-        </div>
+     </div>
     );
 };
 
