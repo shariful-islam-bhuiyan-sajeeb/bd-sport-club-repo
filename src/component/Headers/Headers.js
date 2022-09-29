@@ -8,6 +8,8 @@ import UpdateCard from '../UpdateCard/UpdateCard';
 const Headers = () => {
 
  const [sports,setSport] =useState([]);
+  
+
 
  useEffect(()=>{
      fetch('sport.json')
@@ -22,8 +24,8 @@ const Headers = () => {
                         <FontAwesomeIcon icon={faPassport}></FontAwesomeIcon>
                         <h2> <span className=' font-bold  text-emerald-600 '>BD</span> <span className='text-red-500'>Sport Club.</span> </h2>
                     </div>
-                        <h1 className='text-4xl text-black pr-0 font-semibold mt-10'>
-                            Select you Favourite Game.</h1>
+                        <h1 className='text-4xl text-black pr-0 font-semibold mt-10'>Select Your Favourite Sport.</h1>
+
                     <div className='grid grid-cols-3 w-3/4 mb-16 gap-5'>
                         {
                             sports.map(sports => <SportCard sports={sports}></SportCard>)

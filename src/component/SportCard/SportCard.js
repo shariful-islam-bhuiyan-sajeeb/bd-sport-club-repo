@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const SportCard = ({sports}) => {
+    const [card,setCard] =useState({})
+    console.log(card);
+
+
+    const addToList =()=>{
+
+    }
+
+
 
     const { picture, name,age,time,about}=sports
 
