@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
 
-const SportCard = ({sports}) => {
-    const [card,setCard] =useState({})
-    console.log(card);
+const SportCard = ({ sports,addToList }) => {
+    
 
-
-    const addToList =()=>{
-
-    }
-
-    const { picture, name,age,time,about}=sports
+    const { picture, name,age,time,about}=sports;
 
     return (
         <div className='grid'>
@@ -22,7 +15,7 @@ const SportCard = ({sports}) => {
                     <p>For Time{time}</p>
 
                     <div className="card-actions justify-center ">
-                        <button className="btn btn-primary btn-lg px-20">Add to List</button>
+                        <button  onClick={()=>addToList(time)} className="btn btn-primary btn-lg px-20 w-full">Add to List</button>
                     </div>
                 </div>
             </div>

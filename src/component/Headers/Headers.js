@@ -6,6 +6,11 @@ import UpdateCard from '../UpdateCard/UpdateCard';
 const Headers = () => {
 
  const [sports,setSport] =useState([]);
+ const [times,setTime] =useState(0)
+    const addToList =(time)=>{
+       setTime(times+time)
+
+    }
   
 
 
@@ -15,8 +20,8 @@ const Headers = () => {
      .then(data =>setSport(data))
  },[])
     return (
-        <div className='flex' >
-            <div className='text-5xl font-semibold md:w-8/12 mx-auto '>
+        <div className='lg:pl-10 lg px-4 bg-slate-100 xl:grid xl:grid-cols-4 lg:grid-cols-3 gap-6 sm:grid grid-cols-2 flex  flex-col-reverse  ' >
+            <div className='text-5xl font-semibold xl:col-span-3 lg:col-span-2  pb-12 pt-6 '>
                <div className='pt-20 gap-5'>
                     <div className='flex gap-5'>
                         <FontAwesomeIcon icon={faPassport}></FontAwesomeIcon>
@@ -26,14 +31,14 @@ const Headers = () => {
 
                     <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  mb-16  gap-5'>
                         {
-                            sports.map(sports => <SportCard sports={sports}></SportCard>)
+                            sports.map(sports => <SportCard sports={sports} addToList={addToList}></SportCard>)
                         }
                      </div>        
               </div>
            </div>
            
-            <div className='bg-orange-300 w-96 h-screen' >
-                <UpdateCard></UpdateCard>
+            <div className='bg-orange-300  ' >
+                <UpdateCard time={times} > </UpdateCard>
            </div>
      </div>
     );
