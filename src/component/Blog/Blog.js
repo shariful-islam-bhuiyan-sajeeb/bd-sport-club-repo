@@ -8,7 +8,7 @@ const Blog = () => {
                     tabIndex={0}
                     className="collapse collapse-plus border border-base-300  text-white bg-gray-800 rounded-box">
                     <div className="collapse-title text-xl font-medium">
-                        1. How React Work ?
+                        1. How React Work?
                     </div>
                     <div className="collapse-content">
                         <p>
@@ -35,7 +35,7 @@ const Blog = () => {
                             behavior of the component and how it will render. A state must be
                             kept as simple as possible. It represents the component's local
                             state or information. It can only be accessed or modified inside
-                            the component or by the component directly.
+                            the or by the component directly.
                         </p>
                         <p className="pt-4">
                             Props are read-only components. It is an object which stores the
