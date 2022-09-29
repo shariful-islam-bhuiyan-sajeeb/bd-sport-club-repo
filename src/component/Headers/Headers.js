@@ -26,7 +26,7 @@ const Headers = () => {
                     </div>
                         <h1 className='text-4xl text-black pr-0 font-semibold mt-10'>Select Your Favourite Sport.</h1>
 
-                    <div className='grid grid-cols-3 w-3/4 mb-16 gap-5'>
+                    <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  mb-16  gap-5'>
                         {
                             sports.map(sports => <SportCard sports={sports}></SportCard>)
                         }
