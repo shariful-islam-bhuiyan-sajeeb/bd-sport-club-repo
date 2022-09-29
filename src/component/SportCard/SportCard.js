@@ -6,7 +6,7 @@ const SportCard = ({sports}) => {
 
     return (
         <div className='grid'>
-            <div className="card card-compact bg-base-100 shadow-xl p-6 mt-16">
+            <div className="card card-compact bg-base-100 shadow-2xl p-6 mt-16">
                 <figure><img src={picture} alt="Shoes" /></figure>
                 <div className="card-body ">
                     <h2 className="card-title">{name}</h2>
